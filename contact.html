@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — The Signal</title>
+<meta name="description" content="Get in touch with The Signal newsroom.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-active="contact">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div id="site-top"></div>
+
+<main id="main">
+  <section class="page-intro wrap">
+    <span class="eyebrow">Get in touch</span>
+    <h1>Contact the newsroom</h1>
+    <p>Have a tip, a correction, or a question about a story? Send us a note.</p>
+  </section>
+
+  <section class="section wrap">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <dl>
+          <dt>Newsroom desk</dt>
+          <dd>tips@thesignal.example</dd>
+          <dt>Advertising</dt>
+          <dd>ads@thesignal.example</dd>
+          <dt>Corrections</dt>
+          <dd>corrections@thesignal.example</dd>
+          <dt>Mailing address</dt>
+          <dd>12 Wire Street, Newsroom District</dd>
+          <dt>Response time</dt>
+          <dd>Within two business days</dd>
+        </dl>
+      </div>
+
+      <form id="contactForm" novalidate>
+        <div id="formStatus" role="status"></div>
+
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name" placeholder="Ama Owusu">
+        <div class="field-error">Please enter your name.</div>
+
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com">
+        <div class="field-error">Please enter a valid email address.</div>
+
+        <label for="topic">Topic</label>
+        <select id="topic" name="topic">
+          <option>General inquiry</option>
+          <option>Story tip</option>
+          <option>Correction request</option>
+          <option>Advertising</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell us what's on your mind (at least 10 characters)."></textarea>
+        <div class="field-error">Message should be at least 10 characters.</div>
+        <p class="form-note">We won't share your details. This form does not send data anywhere — it's for demonstration only.</p>
+
+        <button type="submit" class="btn">Send message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
